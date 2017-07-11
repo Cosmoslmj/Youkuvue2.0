@@ -170,7 +170,8 @@ margin-left: -4px;
 position: absolute;
 }
 .searchbox {
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .searchbox .col-xs-10 {
   padding-left: 6px;
@@ -200,9 +201,9 @@ position: absolute;
   height: 50px;
   margin-top: 20px;
   overflow-y: hidden; 
-}
-.nav-list {
   overflow-x: scroll;
+}
+.nav-list {  
   width:2000px;
 }
 .nav-list ul {
@@ -232,24 +233,28 @@ position: absolute;
 .content {
   margin-bottom: 50px;
 }
-.video-large iframe {
+
+.video-large img {
   width: 100%;
 }
 .video-box {
-  height: 170px;
+  height: 140px;
  /* position: absolute;*/
 }
-.video-small .video-box video {
-  margin-top: 10px;
-  margin-right: 5px;
+.video-small .video-box{
+  margin-top: 20px;
+  /*margin-right: 5px;*/
   background-color: #aaa;
+}
+.small-left {
+  position: relative;
 }
 .video-dynamic {
   position: relative;
-  top:-34px;
   width: 100%;
   height: 30px;
-  background-color: rgba(0,0,0,.4);
+  top: -30px;
+  background-color: rgba(0,0,0,.2);
 }
 .video-num {
   line-height: 30px;
@@ -258,7 +263,7 @@ position: absolute;
   color: #fff;
 }
 .detial {
-  margin-top: -8px;
+  margin-top: -20px;
   width: 100%;
   height: 44px;
   background-color: #f2f2f2;
@@ -284,6 +289,20 @@ position: absolute;
   color: #909090;
   top: -10px;
   padding-left: 8px;
+}
+.small-icon {
+  background: url(http://static.youku.com/index/img/mobile/yk.png) no-repeat -60px -60px;
+  position: absolute;
+  z-index: 333;
+  width: 50px;
+  height: 50px;
+}
+.title-video {
+  margin-top: 30px;
+}
+.title-video a {
+  color: #909090;
+  font-size: 26px;
 }
 .sidebar ul {
   position: fixed;

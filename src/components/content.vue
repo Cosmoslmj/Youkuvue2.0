@@ -1,7 +1,7 @@
 <template>
   <div class="container clearfix content">
     <div class="row">
-      <div class="col-xs-12 video-large">
+      <div class="col-xs-12 video-large" @click="gotopage">
         <img src="http://r1.ykimg.com/05100000596449CDADC0B0ADA702BB7A">
         <div class="video-dynamic">
           <span class="video-num">更新完成</span>                
@@ -11,7 +11,7 @@
     <div class="video-small">
       <div class="row">
         <div class="col-xs-6" v-for="item in content">
-          <div class="small-left">
+          <div class="small-left" @click="gotopage">
             <div class="video-box">
               <div class="small-icon">
                 <!-- <img src="http://static.youku.com/index/img/mobile/yk.png"> -->
@@ -243,6 +243,12 @@ export default {
           comment: '5.6亿'
         }
       ]
+    }
+  },
+  methods: {
+    gotopage () {
+      this.$router.push({path: '/content-detail'})
+      console.log('4')
     }
   }
 }

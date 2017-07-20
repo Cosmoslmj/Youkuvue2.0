@@ -248,7 +248,6 @@ export default {
   methods: {
     gotopage () {
       this.$router.push({path: '/content-detail'})
-      console.log('4')
     }
   }
 }

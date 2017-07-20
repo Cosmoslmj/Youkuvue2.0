@@ -22,7 +22,7 @@
                   <span class="glyphicon glyphicon-search"></span><br>
                   <span class="search-content">搜索</span>
                 </div>
-                <div class="login">
+                <div class="login" @click="login">
                   <span class="glyphicon glyphicon-user"></span><br>
                   <span class="login-content">登录</span>
                 </div>
@@ -119,6 +119,9 @@ export default {
       this.scroll = document.body.scrollTop
       console.log(this.scroll)
       this.scroll = 0
+    },
+    login () {
+      this.$router.push({path: '/login'})
     }
   },
   mounted () {

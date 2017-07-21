@@ -123,21 +123,20 @@ export default {
       position: relative;
     }
     .input-box label {
-      height: 44px;
+      height: 46px;
       margin: 5px 0;
     }
     .input-box input {
-      border: 1px solid #f1f1f1;
+      border: 1px solid transparent;
       border-radius: 25px 0 0 25px;
       border-right: 0;
-      height: 90%;
+      height: 80%;
       width: 150%;
       line-height: 90%;
       position: relative;
-      top:-6px;
+      top: -4px;
       font-weight: normal;
       outline: none;
-      *outline: none;
       padding-left: 20px;
       color: #333;
     }
@@ -147,7 +146,7 @@ export default {
     }
     span.country-name,span.tel-num, span.get-psw {
       position: relative;
-      top:12px;
+      top:8px;
       padding-left: 20px;
       font-size: 16px;
     }

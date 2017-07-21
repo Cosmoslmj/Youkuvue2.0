@@ -191,6 +191,7 @@ export default {
     padding-right: 25px;
     margin-left: 10px;
     height: 43px;
+    cursor: pointer;
   }
   .search-content,.login-content {
   margin-left: -4px;

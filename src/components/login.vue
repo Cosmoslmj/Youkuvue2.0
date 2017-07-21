@@ -51,7 +51,7 @@
         <footer>
             <div class="login-api container">
                 <ul class="login-list">
-                    <li class="qq"><a href="https://account.youku.com/"><img src="../assets/qq.png" width="32px" height="32px"></a></li>
+                    <li class="qq"><a href="https://jifen.qq.com/pc/login?s_url="><img src="../assets/qq.png" width="32px" height="32px"></a></li>
                     <li class="weibo"><a href="https://api.weibo.com/"><img src="../assets/weibo.png" width="38px" height="38px"></a></li>
                     <li class="paly"><a href="https://auth.alipay.com/"><img src="../assets/paly.png" width="32px" height="32px"></a></li>
                     <li class="taobao"><a href="https://taobao.com/"><img src="../assets/taobao.png" width="36px" height="36px"></a></li>
@@ -86,7 +86,7 @@ export default {
   },
   methods: {
     gotopage () {
-      this.$router.push({path: '/#'})
+      this.$router.push({path: '/'})
     },
     gotoreg () {
       this.$router.push({path: '/register'})
@@ -131,21 +131,20 @@ export default {
       position: relative;
     }
     .input-box label {
-      height: 44px;
+      height: 46px;
       margin: 5px 0;
     }
     .input-box input {
-      border: 1px solid #f1f1f1;
+      border: 1px solid transparent;
       border-radius: 25px 0 0 25px;
       border-right: 0;
-      height: 90%;
+      height: 80%;
       width: 150%;
       line-height: 90%;
       position: relative;
-      top:-6px;
+      top: -4px;
       font-weight: normal;
       outline: none;
-      *outline: none;
       padding-left: 20px;
       color: #333;
     }
@@ -155,7 +154,7 @@ export default {
     }
     span.country-name,span.tel-num, span.get-psw {
       position: relative;
-      top:12px;
+      top:8px;
       padding-left: 20px;
       font-size: 16px;
     }
@@ -167,6 +166,7 @@ export default {
       right: 0;
       top:10px;
       right: 35px;
+      cursor: pointer;
     }
     .input-box .fr::after {
       content: '';

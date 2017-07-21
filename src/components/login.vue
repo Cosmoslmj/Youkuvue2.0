@@ -89,7 +89,7 @@ export default {
       this.$router.push({path: '/#'})
     },
     gotoreg () {
-      this.$router.push({path: 'register'})
+      this.$router.push({path: '/register'})
       alert(5)
     },
     showCountry () {
@@ -98,7 +98,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scoped>
     header {
       height: 50px;
       color: #333;
@@ -114,10 +114,10 @@ export default {
       left: 5%;
       top:15px;
     }
-   .login-list {
+     ul{
       padding: 2px 5%;
     }
-    .login-list li {
+    ul li {
       list-style: none;
       height: 44px;
       padding: 0 15px;

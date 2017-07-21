@@ -50,11 +50,11 @@
         </div>
         <footer>
             <div class="login-api container">
-                <ul>
+                <ul class="login-list">
                     <li class="qq"><a href="https://account.youku.com/"><img src="../assets/qq.png" width="32px" height="32px"></a></li>
                     <li class="weibo"><a href="https://api.weibo.com/"><img src="../assets/weibo.png" width="38px" height="38px"></a></li>
                     <li class="paly"><a href="https://auth.alipay.com/"><img src="../assets/paly.png" width="32px" height="32px"></a></li>
-                    <li class="taobao"><a href="https://oauth.m.taobao.com/"><img src="../assets/taobao.png" width="36px" height="36px"></a></li>
+                    <li class="taobao"><a href="https://taobao.com/"><img src="../assets/taobao.png" width="36px" height="36px"></a></li>
                 </ul>
             </div>
             <div class="remind-new">
@@ -90,6 +90,7 @@ export default {
     },
     gotoreg () {
       this.$router.push({path: 'register'})
+      alert(5)
     },
     showCountry () {
       this.isShowCountryDialog = true
@@ -113,10 +114,10 @@ export default {
       left: 5%;
       top:15px;
     }
-    ul {
+   .login-list {
       padding: 2px 5%;
     }
-    ul li {
+    .login-list li {
       list-style: none;
       height: 44px;
       padding: 0 15px;

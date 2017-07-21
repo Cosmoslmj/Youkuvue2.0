@@ -11,7 +11,7 @@
                         <div class="input-box">
                           <label>
                             <span class="country-name">中国大陆</span>
-                            <span class="fr">+86</span>
+                            <span class="fr" @click="showCountry">+86</span>
                           </label>
                         </div>
                       </li>
@@ -57,14 +57,23 @@
                 <span>注册即同意《用户协议》和《版权声明》</span>
             </div>
         </footer>
+        <my-dialog :is-show="isShowCountryDialog">
+          <country-tel></country-tel>
+        </my-dialog>
     </div>
 </template>
 
 <script>
+import Dialog from './dialog'
+import CountryTel from './country'
 export default {
+  components: {
+    MyDialog: Dialog,
+    CountryTel
+  },
   data () {
     return {
-
+      isShowCountryDialog: false
     }
   },
   methods: {
@@ -73,6 +82,9 @@ export default {
     },
     gotologin () {
       this.$router.push({path: '/login'})
+    },
+    showCountry () {
+      this.isShowCountryDialog = true
     }
   }
 }

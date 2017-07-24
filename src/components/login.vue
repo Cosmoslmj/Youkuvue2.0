@@ -9,17 +9,17 @@
         <ul>
           <li class="country-choose-box">
             <div class="input-box">
-                          <label>
-                            <span class="country-name">中国大陆</span>
-                            <span class="fr" @click="showCountry">+86</span>
-                          </label>
+              <label>
+                <span class="country-name">中国大陆</span>
+                <span class="fr" @click="showCountry">+86</span>
+              </label>
             </div>
           </li>
           <li class="tel-num-box">
             <div class="input-box">
-                          <label>
-                            <input type="tel" name="" placeholder="手机号码" maxlength="11">
-                          </label>
+              <label>
+                <input type="tel" name="" placeholder="手机号码" maxlength="11">
+              </label>
             </div>
           </li>
           <li class="password-box">
@@ -75,9 +75,9 @@
       </div>
       <div class="remind-new">
         <span class="no-count">还没有账号？
-                    <span @click="gotoreg">
-                      <a href="">立即注册</a>
-                    </span>
+          <span @click="gotoreg">
+            <a href="">立即注册</a>
+          </span>
         </span>
       </div>
     </footer>

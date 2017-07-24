@@ -1,16 +1,16 @@
 <template>
-    <div class="container">
-      <div class="nav">
-        <div class="nav-list clearfix">
-          <ul>
-            <li>
-              <router-link v-for="item in navlist" :key="item.path" :to="{ path: item.path }">{{ item.nav }}          
-              </router-link>
-            </li>  
-          </ul>
-        </div>
-      </div> 
-    </div>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-list clearfix">
+        <ul>
+          <li v-for="(item, index) in navlist" :key="item" @click="current(index)"class="{current:index === currentselect}">
+            <router-link :to="{ path: item.path }"> {{ item.nav }}          
+            </router-link>
+          </li>  
+        </ul>
+      </div>
+    </div> 
+  </div>
 </template>
 
 <script>
@@ -114,11 +114,22 @@ export default {
           nav: '财经',
           path: '/'
         }
-      ]
+      ],
+      currentselect: 0
+    }
+  },
+  methods: {
+    current (index) {
+      this.currentselect = index
     }
   }
 }
 </script>
 
 <style scoped>
+  .isCurrent {
+    color: #5599FF;
+    text-decoration: none;
+    border-bottom: 3px solid #5599FF;
+  }
 </style>

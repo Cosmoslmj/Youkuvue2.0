@@ -240,6 +240,7 @@ export default {
     border-bottom: 3px solid #eee;
   }
   .nav-list ul li {
+    display: inline-block;
     font-size: 18px;
     white-space:nowrap;
   }

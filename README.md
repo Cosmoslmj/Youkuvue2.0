@@ -28,4 +28,6 @@ npm test
 ```
 ### 手机展示Demo
 ![Image text](./src/assets/youku.png)
+
+
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

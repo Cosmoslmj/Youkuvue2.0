@@ -20,7 +20,7 @@ export default {
       navlist: [
         {
           nav: '首页',
-          path: '/content'
+          path: '/member'
         },
         {
           nav: '会员',
@@ -28,91 +28,91 @@ export default {
         },
         {
           nav: '直播',
-          path: '/'
+          path: '/member'
         },
         {
           nav: '剧情',
-          path: '/'
+          path: '/member'
         },
         {
           nav: '电影',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '综艺',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '音乐',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '动漫',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '少儿',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '资讯',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '娱乐',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '文化',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '纪实',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '财经',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '体育',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '汽车',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '科技',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '游戏',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '搞笑',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '旅游',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '时尚',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '亲子',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '教育',
-          path: '/'
+          path: '/menber'
         },
         {
           nav: '财经',
-          path: '/'
+          path: '/menber'
         }
       ],
       currentselect: 0

@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     closeMyself () {
-      alert('还是取消不了呀、。。。')
+      this.$emit('on-close')
     }
   }
 }

@@ -81,7 +81,7 @@
         </span>
       </div>
     </footer>
-    <my-dialog :is-show="isShowCountryDialog">
+    <my-dialog :is-show="isShowCountryDialog" @on-close="closeDialog('isShowCountryDialog')">
       <country-tel></country-tel>
     </my-dialog>
   </div>
@@ -110,6 +110,9 @@ export default {
     },
     showCountry () {
       this.isShowCountryDialog = true
+    },
+    closeDialog (attr) {
+      this[attr] = false
     }
   }
 }

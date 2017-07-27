@@ -66,7 +66,7 @@
         <li>中国台湾<span class="fr">+886</span></li>
       </ul>
     </div>
-    <div class="cancel-box" @click="closeDialog"><span>取消</span></div>
+    <div class="cancel-box" @on-close="closeDialog('isShowCountryDialog')"><span>取消</span></div>
   </div>
 </template>
 
@@ -74,11 +74,12 @@
 export default {
   data () {
     return {
+      isShowCountryDialog: true
     }
   },
   methods: {
-    closeDialog () {
-      alert('还是取消不了呀')
+    closeDialog (attr) {
+      this[attr] = false
     }
   }
 }

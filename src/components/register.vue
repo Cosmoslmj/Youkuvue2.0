@@ -57,7 +57,7 @@
         <span>注册即同意《用户协议》和《版权声明》</span>
       </div>
     </footer>
-    <my-dialog :is-show="isShowCountryDialog">
+    <my-dialog :is-show="isShowCountryDialog" @on-close="closeDialog('isShowCountryDialog')">
       <country-tel></country-tel>
     </my-dialog>
   </div>
@@ -85,6 +85,9 @@ export default {
     },
     showCountry () {
       this.isShowCountryDialog = true
+    },
+    closeDialog (attr) {
+      this[attr] = false
     }
   }
 }
